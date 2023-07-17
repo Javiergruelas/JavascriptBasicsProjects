@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>JavaScript Basics Project Compilation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!-- Title and name section -->
+        <header>
+            <h1>JavaScript Basics Project Compilation</h1>
+            <h3>By Javier Ruelas</h3>
+        </header>
+        <hr>
+        <!-- Button to change the background color!  -->
+        <div id="color-change-buttons">
+            <h4>Buttons to change Background and Text Colors!</h4>
+            <button>Change Background Color</button>
+            <button id="textChange">Change Text Color</button>
+            <button onClick="window.location.reload();">Reset Page</button>
+        </div>
+
+        <hr>
+
+        <div id="character-counter">
+        <form>
+            <h3>Write Something for us to count</h3>
+            <textarea name="textCount" id="textbox" class="form-control" rows="10" cols="60"></textarea>
+            <span id="char_count">0/150</span>
+            <p class="result">
+                <span id="word">0</span> Words and
+                <span id="char">0</span> Characters
+            </p>
+        </form>
+        </div>
+
+        <hr>
+
+        <div id="todo-list">
+            <h4>Interative To-Do list!</h4>
+                <div id="newtask">
+                    <input type="text" placeholder="Enter To-Do">
+                    <button id="push">Add</button>
+                </div>
+                <div id="tasks">
+                </div>
+        </div>
+
+        <hr>
+       
+        <div id="calculator">
+            <h4>Calculator</h4>
+            <table class="calculator" >
+                <tr>
+                  <td colspan="3"> <input class="display-box" type="text" id="result" disabled /> </td>
+               
+                  <!-- clearScreen() function clears all the values -->
+                  <td> <input type="button" value="C" onclick="clearScreen()" id="btn" /> </td>
+                </tr>
+                <tr>
+                  <!-- display() function displays the value of clicked button -->
+                  <td> <input type="button" value="1" onclick="display('1')" /> </td>
+                  <td> <input type="button" value="2" onclick="display('2')" /> </td>
+                  <td> <input type="button" value="3" onclick="display('3')" /> </td>
+                  <td> <input type="button" value="/" onclick="display('/')" /> </td>
+                </tr>
+                <tr>
+                  <td> <input type="button" value="4" onclick="display('4')" /> </td>
+                  <td> <input type="button" value="5" onclick="display('5')" /> </td>
+                  <td> <input type="button" value="6" onclick="display('6')" /> </td>
+                  <td> <input type="button" value="-" onclick="display('-')" /> </td>
+                </tr>
+                <tr>
+                  <td> <input type="button" value="7" onclick="display('7')" /> </td>
+                  <td> <input type="button" value="8" onclick="display('8')" /> </td>
+                  <td> <input type="button" value="9" onclick="display('9')" /> </td>
+                  <td> <input type="button" value="+" onclick="display('+')" /> </td>
+                </tr>
+                <tr>
+                  <td> <input type="button" value="." onclick="display('.')" /> </td>
+                  <td> <input type="button" value="0" onclick="display('0')" /> </td>
+               
+                  <!-- calculate() function evaluates the mathematical expression -->
+                  <td> <input type="button" value="=" onclick="calculate()" id="btn" /> </td>
+                  <td> <input type="button" value="*" onclick="display('*')" /> </td>
+                </tr>
+              </table>        
+        </div>
+
+        <hr>
+
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>

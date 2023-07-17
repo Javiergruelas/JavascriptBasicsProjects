@@ -1,0 +1,48 @@
+body {
+    background-color: #8db2da;
+}
+
+header {
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+#color-change-buttons{
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+button {
+    align-self: center;
+    background-color: #555555;
+    border-radius: 12px;
+}
+
+#character-counter {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+#todo-list {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+}
+
+#calculator {
+   text-align: center;
+   padding-bottom: 20px;
+}
+
+table {
+    margin-left: auto;
+  margin-right: auto;
+}
